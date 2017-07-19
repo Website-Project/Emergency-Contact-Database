@@ -1,0 +1,117 @@
+<html>
+
+  <head>
+    <title>Emergency Contact Database</title>
+    <style type="text/css">
+      body {
+  background: linear-gradient (aqua, green);
+  url("https://cdn.discordapp.com/attachments/283703234063892480/336886310964822018/FotoFlexer_Photo.jpg");
+  background: url("https://cdn.discordapp.com/attachments/283703234063892480/336886310964822018/FotoFlexer_Photo.jpg");
+  background-repeat: no-repeat;
+}
+
+#nav ul {
+padding: 40px;
+list-style-type: none;
+text-align:center;
+display: inline;
+}
+
+h2 {
+  padding-left: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: purple;
+}
+
+a:hover {
+  color: red;
+}
+
+.stage {
+  -webkit-perspective: 1000;
+}
+
+.flashcard {
+  height: 150px;
+  width: 250px;
+  margin: 10% auto;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 2px #000;
+  -webkit-transform-style: preserve-3d;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  float: left;
+}
+
+.flipped,
+.back {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+.front,
+.back {
+  height: 150px;
+  width: 250px;
+  position: absolute;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+}
+
+.front p,
+.back p {
+  margin-top: 25%;
+  font-size: 1em;
+}
+
+.numbers {
+  text-align: center;
+  font-size: 25px;
+}
+    </style>> 
+    <script type="text/javascript">
+      $(document).ready(function() {
+  $('.flashcard').on('click', function() {
+    $('.flashcard').toggleClass('flipped');
+  });
+});
+    </script>>
+  </head>
+  
+  <body>
+    <h2 align="center">Site Navigation By Country Name</h2>
+    <div id="nav">
+      <ul>
+        <li>
+          <A href="A-F.html">A-F</A>
+        </li>
+        <li><a href="G-K.html">G-K</a></li>
+        <li><a href="L-P.html">L-P</a></li>
+        <li><a href="Q-U.html">Q-U</a></li>
+        <li><a href="V-Z.html">V-Z</a></li>
+      </ul>
+    </div>
+    <div class="stage">
+      <div class="flashcard">
+        <div class="front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg" alt="Afghanistan Flag" height="150" width="200">
+        </div>
+        <div class="back">
+          <ul class="numbers">
+            <li>Police: 119</li>
+            <li>Fire: 119</li>
+            <li>Ambulance: 102</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
